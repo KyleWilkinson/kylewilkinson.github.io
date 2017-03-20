@@ -14,19 +14,20 @@
     text-align: center;
   }
 
-  .A{
+  h1{
     display: inline-block;
     font-size: 250pt;
     margin: 20px 50px 20px 0px;
+
   }
 
-  .B{
+  h2{
     display: inline-block;
     font-size: 250pt;
     margin: 20px 50px 20px 50px;
   }
 
-  .C{
+  h3{
     display: inline-block;
     font-size: 250pt;
     margin: 20px 0px 20px 50px;
@@ -55,17 +56,11 @@
 </style>
 
 <body>
+
   <div class="nav">
-    <div class="A">
-      A
-    </div>
-
-    <div class="B">
-      <h1>B</h1>
-    </div>
-
-    <div class="C">
-      <h1>C</h1>
+    <h1>A</h1>
+    <h2>B</h2>
+    <h3>C</h3>
     </div>
   </div>
 
