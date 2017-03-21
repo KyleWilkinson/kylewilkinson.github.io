@@ -7,14 +7,6 @@
 <style>
 
   h1{
-    font-size: 250pt;
-  }
-
-  .nav{
-    text-align: center;
-  }
-
-  h1{
     display: inline-block;
     font-size: 250pt;
     margin: 20px 50px 20px 0px;
@@ -32,6 +24,31 @@
     font-size: 250pt;
     margin: 20px 0px 20px 50px;
   }
+
+  .dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+
 /*<header>
   <a href="Level1a.html">Level 1a</a>
   <a href="Level1b.html">Level 1b</a>
@@ -57,11 +74,20 @@
 
 <body>
 
-  <div class="nav">
-    <h1>A</h1>
+  <div class="dropdown">
+    <button class="dropbtn">A</button>
+    <div class="dropdown-content">
+      <a href="Level1a.html">Level 1a</a>
+      <a href="Level2a.html">Level 2a</a>
+      <a href="Level3a.html">Level 3a</a>
+      <a href="Level4a.html">Level 4a</a>
+      <a href="Level5a.html">Level 5a</a>
+
+    </div>
+  </div>
+
     <h2>B</h2>
     <h3>C</h3>
-    </div>
   </div>
 
 
