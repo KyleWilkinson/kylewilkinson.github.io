@@ -31,9 +31,11 @@
     }
 
     .main {
-      -webkit-animation: textblock 20s infinite; /* Chrome, Safari, Opera */
+      -webkit-animation: textblock 10s infinite; /* Chrome, Safari, Opera */
       -webkit-animation-direction: alternate; /* Chrome, Safari, Opera */
-      animation: textblock 20s infinite;
+      animation: textblock 3s;
+      animation-iteration-count: 1;
+      animation-timing-function: linear;
       animation-direction: alternate;
       position:relative;
     }
@@ -46,38 +48,7 @@
     	z-index:-1;
 
     	transition: right;
-
-    	position: relative;
-
     }
-
-    /* Chrome, Safari, Opera */
-
-    @-webkit-keyframes myfirst {
-      0%   {background: red; left: 0px; top: 0px;}
-      25%  {background: yellow; left: 200px; top: 0px;}
-    	50%  {background: blue; left: 200px; top: 200px;}
-    	75%  {background: green; left: 0px; top: 200px;}
-      100% {background: red; left: 0px; top: 0px;}
-    }
-
-    @keyframes myfirst {
-    0%   {background: red; left: 0px; top: 0px;}
-    25%  {background: yellow; left: 200px; top: 0px;}
-    50%  {background: blue; left: 200px; top: 200px;}
-    75%  {background: green; left: 0px; top: 200px;}
-    100% {background: red; left: 0px; top: 0px;}
-  }
-
-  @-webkit-keyframes textblock {
-    0%   {top: 0px; -webkit-transform:scale(0);}
-    100% {top: 6000px;-webkit-transform:scale(1);}
-  }
-
-  @keyframes textblock {
-    0%   {top: 0px; transform:scale(0);}
-    100% {top: 6000px;transform:scale(1);}
-}
 
 
     h1{
@@ -96,7 +67,7 @@
     p{
       margin: 0px 0px 30px 0px;
       padding: 0px 0px 0px 60px;
-      font-size: 14pt;
+      font-size: 13pt;
     }
 
     .title{
@@ -109,14 +80,25 @@
       display: inline-block;
       width: 800px;
       height: auto;
+      animation-name: change;
+      animation-duration: 15s;
+      animation-iteration-count: infinite;
     }
 
     .sign{
       padding: 10px 0px 10px 0px;
-      margin: 245px 0px 0px 0px;
+      margin: 160px 0px 0px 0px;
       border-bottom: solid 2px;
       border-top: solid 2px;
       font-size: 12pt;
+    }
+
+    @-webkit-keyframes change{
+      0% {color: black;}
+      25% {color: red;}
+      50% {color: blue;}
+      75% {color: yellow;}
+      100% {color: green;}
     }
 
     </style>
@@ -131,6 +113,12 @@
       <div class="sign">
         <b>Signed:</b> Edward Wright, Geoffrey White, William Slack, Caroline Rawlence, Ian McLaren, Sam Lambert, Ivor Kamlish, Gerald Jones, Bernard Highton, Brian Grimbly, John Garner, Ken Garland, Anthony Froshaug, Robin Fior, Germano Facetti, Ivan Dodd, Harriet Crowder, Anthony Clift, Gerry Cinamon, Robert Chapman, Ray Carpenter, Ken Briggs.
       </div>
+      <footer>
+        <a href="Level4a.html">
+          <div class="circle"></div>
+        </a>
+        <a href="Nav1.html"></a>
+      </footer>
     </div>
 
     <div class="main">
@@ -144,12 +132,5 @@
 
 
     </div>
-
-    <footer>
-      <a href="Level4a.html">
-        <div class="circle"></div>
-      </a>
-      <a href="Nav1.html"></a>
-    </footer>
 
   </body>
