@@ -1,0 +1,64 @@
+body{
+  background-color: peachpuff;
+}
+h1{
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+}
+
+h2{
+  font-size: 16px;
+  font-weight: normal;
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+}
+
+blockquote{
+  font-size: 16px;
+  font-weight: normal;
+  font-style: italic;
+  margin: 0px 0px 0px 0px;
+  padding: 10px 0px 10px 50px;
+}
+
+h4{
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+}
+
+.nav{
+  font-family: "arial", sans-serif;
+  font-size: 12pt;
+  color: black;
+  text-decoration: none;
+  display: inline-block;
+  float: left;
+  margin: 50px 20px 20px 50px;
+  position: fixed;
+  transform: scale(1);
+  transition: 1s;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+.main{
+  display: inline-block;
+  margin: 20px 250px 20px 250px;
+}
+
+.nav a:hover {
+  -webkit-transform:scale(2);
+
+  text-decoration: none;
+}
+
+.nav a:visited{
+  color: black;
+}
